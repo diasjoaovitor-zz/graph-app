@@ -1,0 +1,26 @@
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px 0;
+}
+
+header a {
+  font-size: 16px;
+  color: #c4b7b7;
+  text-decoration: none;
+}
+
+@media (min-width: 640px) {
+ header a {
+   float: right;
+   position: relative;
+   bottom: 20px;
+   transition: .7s;
+ }
+
+ header a:hover {
+   color: #807373;
+ }
+}

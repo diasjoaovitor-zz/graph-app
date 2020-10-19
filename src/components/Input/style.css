@@ -1,0 +1,17 @@
+.input {
+  display: flex;
+  justify-content: center;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-right: 10px;
+  border-bottom: 1px solid #888;
+  text-align: center;
+}
+
+.input input:last-child {
+  margin-right: 0;
+}

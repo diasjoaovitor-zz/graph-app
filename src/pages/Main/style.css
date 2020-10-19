@@ -1,0 +1,27 @@
+main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main section {
+  margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+  section:last-child {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main section:last-child .output:first-child {
+    width: calc(100% - 330px) !important;
+  }
+
+  main section:last-child .output:nth-child(2) {
+    margin-left: 20px;
+    max-width: 310px;
+  }
+
+  main section:last-child .output:last-child {
+    width: 100% !important;
+  }
+}

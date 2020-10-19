@@ -1,0 +1,12 @@
+.output {
+  border: 2px solid #807373;
+  border-radius: 4px;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.output span {
+  margin-right: 10px;
+}

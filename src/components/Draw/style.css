@@ -1,0 +1,10 @@
+.canvas {
+  border-radius: 4px;
+  background-color: #ccc;
+}
+
+@media (min-width: 690px) {
+  .canvas {
+    min-height: 261.16px;
+  }
+}

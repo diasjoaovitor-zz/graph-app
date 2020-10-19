@@ -1,0 +1,41 @@
+.panel .graph {
+  border: 2px solid #888;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 200px;
+}
+
+.panel img {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 4px;
+  background-color: #ccc;
+}
+
+.panel h2 {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.panel .button {
+  margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+  .panel {
+    display: flex;
+  }
+
+  .panel .graph {
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  .panel .input {
+    margin: 40px auto 50px;
+  }
+
+  .panel form {
+    min-width: 310px;
+  }
+}
