@@ -1,7 +1,9 @@
 **Em Desenvolvimento**
 
 # Graph App
-![graph](https://user-images.githubusercontent.com/43608067/96606173-5e065100-12cd-11eb-950c-62eef3dec61b.png)
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/43608067/96606173-5e065100-12cd-11eb-950c-62eef3dec61b.png" height="400">
+</p>
 
 ## Sobre
 Essa aplicação foi desenvolvida para o componente curricular **Inteligência Artificial** do curso de Engenharia da Computação - FAINOR, demontrando o uso de diversos algorítmos de busca.
