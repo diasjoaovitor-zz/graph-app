@@ -7,9 +7,7 @@ const bfs = (adjacencyList, origin, destination) => {
 
   let isPath = ''
 
-  let a = adjacencyList.size
-
-  while(queue.length > 0 && a > 0) {
+  while(queue.length > 0 && visited.size !== adjacencyList.size) {
     const node = queue.shift()
 
     const current = adjacencyList.get(node)
@@ -26,8 +24,6 @@ const bfs = (adjacencyList, origin, destination) => {
 
     if(isPath)
       break
-
-    a--
   }
 
   return {

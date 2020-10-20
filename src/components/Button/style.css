@@ -9,4 +9,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: .7s;
+}
+
+.button:hover {
+  background-color: #534d4d;
 }

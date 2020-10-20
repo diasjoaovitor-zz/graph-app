@@ -9,7 +9,6 @@
   display: flex;
   justify-content: center;
   padding: 20px 0;
-  overflow: scroll;
 }
 
 .modal form {
@@ -18,6 +17,8 @@
   border: 4px solid #888;
   width: 92%;
   max-width: 371.6px;
+  min-height: 200px;
+  overflow: scroll;
   text-align: center;
 }
 
@@ -57,4 +58,10 @@
 
 .modal .input {
   margin: 20px 0;
+}
+
+@media (min-width: 640px) {
+  .modal form {
+    overflow: auto;
+  }
 }

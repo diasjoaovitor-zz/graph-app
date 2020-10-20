@@ -7,13 +7,14 @@ header {
 }
 
 header a {
-  font-size: 16px;
-  color: #c4b7b7;
-  text-decoration: none;
+  display: none;
 }
 
 @media (min-width: 640px) {
  header a {
+   display: block;
+   color: #c4b7b7;
+   text-decoration: none;
    float: right;
    position: relative;
    bottom: 20px;

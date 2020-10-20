@@ -35,18 +35,23 @@ const Main = () => {
   useEffect(() => {
     if(file) {
       (async () => {
-        const formData = new FormData()
+        try {
+          const formData = new FormData()
 
-        formData.append('file', file)
+          formData.append('file', file)
 
-        axios.post('http://localhost:3001/upload', formData)
+          axios.post('https://graph-interface-api.herokuapp.com/upload', formData)
 
-        const { data } = await axios.get('http://localhost:3001/data?name=' + file.name)
+          const { data } = await axios.get('https://graph-interface-api.herokuapp.com/data?name=' + file.name)
 
-        setUpload(data)
+          setUpload(data)
+
+        } catch (error) {
+          return window.alert('Erro no upload! Tente atualizar a página.')
+        }
       })()
     }
-  }, [file, upload])
+  }, [file])
 
   useEffect(() => {
     if(upload) {
@@ -58,7 +63,7 @@ const Main = () => {
 
       draw()
     }
-  }, [upload])
+  }, [upload, routes, cost, digraph])
 
   const init = () => {
     const modalRoutes = document.querySelector('.modal-routes')
