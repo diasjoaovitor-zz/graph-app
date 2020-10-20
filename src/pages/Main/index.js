@@ -40,9 +40,9 @@ const Main = () => {
 
           formData.append('file', file)
 
-          axios.post('https://graph-interface-api.herokuapp.com/upload', formData)
+          axios.post(process.env.REACT_APP_API_URL+'/upload', formData)
 
-          const { data } = await axios.get('https://graph-interface-api.herokuapp.com/data?name=' + file.name)
+          const { data } = await axios.get(process.env.REACT_APP_API_URL+'/data?name=' + file.name)
 
           setUpload(data)
 
