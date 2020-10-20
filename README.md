@@ -25,8 +25,8 @@ Neste repositório está disponível o frontend da aplicação, o backend, que �
   ```
   Depois você deve abrir cada pasta no terminal e digitar os seguintes comandos:
   ```bash
-  $ yarn ou npm i
-  $ yarn start ou npm start
+  yarn ou npm i
+  yarn start ou npm start
   ```
   
 ## Tecnologias
