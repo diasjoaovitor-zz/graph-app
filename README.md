@@ -2,7 +2,7 @@
 
 # Graph App
 <p align="center">
- <img src="https://user-images.githubusercontent.com/43608067/96606173-5e065100-12cd-11eb-950c-62eef3dec61b.png" height="600">
+ <img src="https://user-images.githubusercontent.com/43608067/96606173-5e065100-12cd-11eb-950c-62eef3dec61b.png" width="500">
 </p>
 
 ## Sobre
