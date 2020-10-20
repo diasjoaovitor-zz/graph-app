@@ -23,5 +23,6 @@ main section {
 
   main section:last-child .output:last-child {
     width: 100% !important;
+    margin-top: 10px;
   }
 }
