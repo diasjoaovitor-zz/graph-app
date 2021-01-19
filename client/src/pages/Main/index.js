@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
-
-import Graph from '../../helpers/Graph'
 
 import Menu from '../../components/Menu'
 import Panel from '../../components/Panel'
@@ -11,6 +8,9 @@ import Button from '../../components/Button'
 import Input from '../../components/Input'
 import Draw from '../../components/Draw'
 import Modal from '../../components/Modal'
+
+import Graph from '../../helpers/Graph'
+import api from '../../services/api'
 
 import image from '../../img/panorama-black-18dp.svg'
 
@@ -40,9 +40,11 @@ const Main = () => {
 
           formData.append('file', file)
 
-          axios.post(process.env.REACT_APP_API_URL+'/upload', formData)
+          api.post('/upload', formData)
 
-          const { data } = await axios.get(process.env.REACT_APP_API_URL+'/data?name=' + file.name)
+          console.log(file.name)
+
+          const { data } = await api.get(`/data?name=${file.name}`)
 
           setUpload(data)
 
