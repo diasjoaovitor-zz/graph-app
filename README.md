@@ -1,7 +1,7 @@
 # Graph App
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/43608067/103301075-49d28480-49df-11eb-9c0a-000a01dc73a0.png" width="500">
+ <img src="https://user-images.githubusercontent.com/43608067/105108005-1774ee00-5a98-11eb-807e-67be03456373.png" width="500">
 </p>
 
 ## Tecnologias 
